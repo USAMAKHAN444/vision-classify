@@ -10,6 +10,10 @@ export interface ClassificationResult {
   facturas?: Array<{ factura_id: number; filename: string }>;
   credit_card_slips?: Array<{ slip_id: number; filename: string }>;
   passports?: Array<{ passport_id: number; filename: string }>;
+<<<<<<< HEAD
+=======
+  entry_stamps?: Array<{ stamp_id: number; filename: string }>;
+>>>>>>> 3a23f7a (feat(ui): support entry_stamps; chore: increase API timeout to 120s)
   cruise_ids?: Array<{ cruise_id: number; filename: string }>;
   cruise_schedules?: Array<{ schedule_id: number; filename: string }>;
   boarding_passes?: Array<{ boarding_pass_id: number; filename: string }>;
@@ -53,6 +57,15 @@ const categoryConfig = {
     color: 'bg-red-500',
     idKey: 'passport_id'
   },
+<<<<<<< HEAD
+=======
+  entry_stamps: {
+    title: 'Entry Stamps',
+    icon: Shield,
+    color: 'bg-pink-500',
+    idKey: 'stamp_id'
+  },
+>>>>>>> 3a23f7a (feat(ui): support entry_stamps; chore: increase API timeout to 120s)
   cruise_ids: {
     title: 'Cruise IDs',
     icon: Ship,

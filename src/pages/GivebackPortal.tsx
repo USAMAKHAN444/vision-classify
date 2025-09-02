@@ -81,6 +81,10 @@ export const GivebackPortal: React.FC = () => {
             facturas: 'factura_id',
             credit_card_slips: 'slip_id',
             passports: 'passport_id',
+<<<<<<< HEAD
+=======
+            entry_stamps: 'stamp_id',
+>>>>>>> 3a23f7a (feat(ui): support entry_stamps; chore: increase API timeout to 120s)
             cruise_ids: 'cruise_id',
             cruise_schedules: 'schedule_id',
             boarding_passes: 'boarding_pass_id',
