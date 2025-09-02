@@ -3,22 +3,7 @@ import { Card } from '@/components/ui/card';
 import { Button } from '@/components/ui/button';
 import { Badge } from '@/components/ui/badge';
 import { Trash2, CreditCard, FileText, Receipt, Ship, Plane, Shield } from 'lucide-react';
-
-export interface ClassificationResult {
-  credit_cards?: Array<{ card_id: number; front?: string; back?: string; filename?: string }>;
-  pos_receipts?: Array<{ pos_id: number; filename: string }>;
-  facturas?: Array<{ factura_id: number; filename: string }>;
-  credit_card_slips?: Array<{ slip_id: number; filename: string }>;
-  passports?: Array<{ passport_id: number; filename: string }>;
-<<<<<<< HEAD
-=======
-  entry_stamps?: Array<{ stamp_id: number; filename: string }>;
->>>>>>> 3a23f7a (feat(ui): support entry_stamps; chore: increase API timeout to 120s)
-  cruise_ids?: Array<{ cruise_id: number; filename: string }>;
-  cruise_schedules?: Array<{ schedule_id: number; filename: string }>;
-  boarding_passes?: Array<{ boarding_pass_id: number; filename: string }>;
-  other_documents?: Array<{ other_id: number; filename: string }>;
-}
+import { ClassificationResult } from '@/types/results';
 
 interface ClassificationResultsProps {
   results: ClassificationResult;
@@ -57,15 +42,12 @@ const categoryConfig = {
     color: 'bg-red-500',
     idKey: 'passport_id'
   },
-<<<<<<< HEAD
-=======
   entry_stamps: {
     title: 'Entry Stamps',
     icon: Shield,
     color: 'bg-pink-500',
     idKey: 'stamp_id'
   },
->>>>>>> 3a23f7a (feat(ui): support entry_stamps; chore: increase API timeout to 120s)
   cruise_ids: {
     title: 'Cruise IDs',
     icon: Ship,

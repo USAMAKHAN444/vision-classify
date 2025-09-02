@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { FileUpload } from '@/components/FileUpload';
-import { ClassificationResults, ClassificationResult } from '@/components/ClassificationResults';
+import { ClassificationResults } from '@/components/ClassificationResults';
+import { ClassificationResult } from '@/types/results';
 
 import { Button } from '@/components/ui/button';
 import { Download } from 'lucide-react';
