@@ -5,11 +5,7 @@ export const config = {
     endpoints: {
       categorize: '/categorize',
     },
-<<<<<<< HEAD
-    timeout: parseInt(import.meta.env.VITE_API_TIMEOUT || '30000'),
-=======
     timeout: parseInt(import.meta.env.VITE_API_TIMEOUT || '120000'),
->>>>>>> 3a23f7a (feat(ui): support entry_stamps; chore: increase API timeout to 120s)
     retryAttempts: parseInt(import.meta.env.VITE_API_RETRY_ATTEMPTS || '3'),
   },
   
